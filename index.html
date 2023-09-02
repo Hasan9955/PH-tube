@@ -7,18 +7,57 @@
     <title>PH-tube</title>
 
     <link rel="shortcut icon" href="image/creatLogo.png" type="image/x-icon">
-    
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      .img{
+        clip-path: circle();
+        
+        margin-top: 5px;
+      }
+    </style>
+
 </head>
 
-<body>
-    <nav>
-
+<body class="container mx-auto">
+    <nav class=" ">
+        <div class="navbar bg-base-100 flex flex-col gap-5 sm:flex-row justify-between mt-5 shadow-md">
+            <img src="image/Logo.png" alt="">
+            <button class="btn">Sort by view</button>
+            <button onclick="window.open('answer.html')" class="btn btn-secondary bg-[#fd1937] hover:bg-[#de364c]">Blog</button>
+          </div>
     </nav>
     <header>
+        <div id="tab-container" class="tabs tabs-boxed flex justify-center sm:ml-24 bg-base-100 gap-5 mt-5">
 
+            <!-- <a class="tab">Tab 1</a> 
+            <a  class="tab tab-active">Tab 2</a> 
+            <a class="tab">Tab 3</a> -->
+          </div>
     </header>
     <main>
-
+        <div id="card-container" class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 p-3 md:p-10">
+            <!-- <div class="card bg-base-100 shadow-xl">
+                <figure><img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="Shoes" /></figure>
+                <div class="flex p-5">
+                  <div >
+                    <img class="img" src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
+                  </div>
+                  <div>
+                    <h2 class="text-xl">Building a Winning UX Strategy Using the Kano Model</h2>
+                    <div class="flex gap-3 items-center">
+                      <p>Awlad Hossain</p>
+                      <div>
+                        <img class=" w-7 h-7" src="image/verifide.png" alt="">
+                      </div>
+                    </div>
+                    <p>91K views</p>
+                  </div>
+                </div>
+              </div> -->
+        </div>
     </main>
 
 
@@ -27,7 +66,7 @@
 
 
 
-<script src="js/tube.js"></script>
+    <script src="js/tube.js"></script>
 </body>
 
 </html>
