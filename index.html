@@ -17,6 +17,11 @@
         
         margin-top: 5px;
       }
+      #time{
+        position: absolute;
+        top: 55%;
+        
+      }
     </style>
 
 </head>
@@ -30,22 +35,26 @@
           </div>
     </nav>
     <header>
-        <div id="tab-container" class="tabs tabs-boxed flex justify-center sm:ml-24 bg-base-100 gap-5 mt-5">
+        <div id="tab-container"  class="tabs tabs-boxed flex justify-center sm:ml-24 bg-base-100 gap-5 mt-5">
 
             <!-- <a class="tab">Tab 1</a> 
             <a  class="tab tab-active">Tab 2</a> 
-            <a class="tab">Tab 3</a> -->
+             -->
+            
           </div>
     </header>
     <main>
         <div id="card-container" class="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 p-3 md:p-10">
             <!-- <div class="card bg-base-100 shadow-xl">
-                <figure><img src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="Shoes" /></figure>
+                <div class="flex justify-end">
+                  <figure><img  src="https://i.ibb.co/L1b6xSq/shape.jpg" alt="Shoes" /></figure>
+                  <h2 id="time" class="bg-black px-1 rounded  text-white">3hrs 56 min ago</h2>
+                </div>
                 <div class="flex p-5">
                   <div >
                     <img class="img" src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="">
                   </div>
-                  <div>
+                  <div> 
                     <h2 class="text-xl">Building a Winning UX Strategy Using the Kano Model</h2>
                     <div class="flex gap-3 items-center">
                       <p>Awlad Hossain</p>
@@ -59,9 +68,14 @@
               </div> -->
         </div>
     </main>
-
-
-
+    <section id="no-contain" hidden>
+      <div class="flex flex-col justify-center items-center text-center">
+        <img src="image/Icon.png" alt="">
+        <h2 class="text-3xl font-bold">Oops!! Sorry, There is no <br>content here</h2>
+      </div>
+    </section>
+    
+      
 
 
 
