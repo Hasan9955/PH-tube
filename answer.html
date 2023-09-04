@@ -1,22 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BLOG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <Style>
-        body{
-            margin: 40px;
-            
-        }
+
     </Style>
 </head>
-<body>
-    <h3>1. Discuss the scope of var, let, and const</h3>
-    <h4>Answer: </h4><br>
-    <h3>2. Tell us the use cases of null and undefined</h3>
-    <h4>Answer: </h4><br>
-    <h3>3. What do you mean by REST API?</h3>
-    <h4>Answer: </h4>
+
+<body class="m-10 bg-slate-100 font-bold">
+    <h3 class="text-2xl">1. Discuss the scope of var, let, and const.</h3><br>
+    <h4 class="text-xl">Answer: <br><br>
+
+
+        In JavaScript, the scope of a variable determines where it can be accessed in the code. <br> There are three types of
+        variable scope in JavaScript. 
+        Those are Global scope, Function scope and Block scope.
+
+        <br><br>
+        Global scope: Variables declared outside of any function have global scope. <br> They can be accessed from anywhere
+        in the code, including other functions. <br>
+        <br>
+        Function scope: Variables declared inside a function have function scope. <br> They can only be accessed from within
+        the function that they are declared in. <br><br>
+
+        Block scope: Variables declared within a block of code, such as a for loop or an if statement, <br> have block scope.
+        They can only be accessed from within the block that they are declared in.
+        <br><br>
+        var is a function scope keyword.
+        
+        let and const those are block scope keyword.
+
+
+
+
+    </h4><br><br>
+    <h3 class="text-2xl">2. Tell us the use cases of null and undefined.</h3><br>
+    <h4 class="text-xl">Answer: <br><br>
+
+        To represent the absence of a value. Null and undefined are both used to represent the absence of a value. <br>
+        However, they have different meanings. Null is used to represent the intentional absence of a value, <br>
+        while undefined is used to represent the unintentional absence of a value. <br>
+        <br>
+        If i use null to declare a empty variable program will run successfully. <br> But if i use undefine the code
+        will return error. <br>
+        So in every case to declare a empty variable we should use null.
+
+    </h4><br><br>
+    <h3 class="text-2xl ">3. What do you mean by REST API?</h3><br>
+    <h3 class="text-xl">Answer: <br>
+        <br> REST API stands for Representational State Transfer Application Programming Interface. <br>
+        It allows applications or devices to communicate with each other using HTTP methods and JSON format. <br>
+        It follows some principles to make the communication between a client and a server simple and uniform. <br> For
+        example, a REST API can use HTTP methods like GET, POST, PUT, and DELETE to perform operations on resources.
+        <br> A
+        resource is anything that can be identified by a URL, such as a user, a product, or a blog post.
+    </h3>
 </body>
+
 </html>

@@ -42,15 +42,18 @@ const takeId = async (id) => {
     const cardContainer = document.getElementById('card-container')
     cardContainer.innerHTML = " ";
 
-    if (data.status === true) {
+
+    
+
+    if (data.data.length > 0) {
 
         data.data.forEach((element) => {
 
-
+            
 
             const div = document.createElement('div')
             div.innerHTML = `
-        <div class="card bg-base-100 ">
+        <div class="card bg-base-100 items-start">
                 <div class="flex justify-end">
                     <figure><img class="h-60 rounded-xl" src=${element.thumbnail} /></figure>
                     <h2 id="time" class="bg-black px-1 rounded  text-white mr-2">${timeSetting(element.others.posted_date)}</h2>
@@ -63,7 +66,7 @@ const takeId = async (id) => {
                     <h2 class="text-xl">${element.title}</h2>
                     <div class="flex gap-3 items-center">
                       <p >${element.authors[0].profile_name}</p>
-                      <div>${element?.authors[0].verified === true?`<div>
+                      <div>${element?.authors[0].verified === true ? `<div>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g id="fi_10629607" clip-path="url(#clip0_11_215)">
                         <g id="Group">
@@ -78,10 +81,10 @@ const takeId = async (id) => {
                         </defs>
                         </svg>
                   
-                        </div>`:'' }</div>
+                        </div>`: ''}</div>
                         
                     </div>
-                    <p>${element.others.views}</p>
+                    <p>${element.others.views} views</p>
                   </div>
                 </div>
               </div>
@@ -90,16 +93,31 @@ const takeId = async (id) => {
             cardContainer.appendChild(div)
 
         })
+        set()
+
+
     }
     else {
 
         const noContain = document.getElementById('no-contain')
-        noContain.removeAttribute('hidden')
+        noContain.classList.remove('hidden')
     }
 
 
 
 }
+
+
+
+
+
+const set = () => {
+    const noContain = document.getElementById('no-contain')
+    noContain.setAttribute('class', 'hidden')
+
+
+}
+
 
 
 const timeSetting = (time) => {
